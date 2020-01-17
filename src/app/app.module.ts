@@ -11,6 +11,7 @@ import {SharedModule} from "./_shared/shared.module";
 import {MatListModule} from "@angular/material/list";
 import {MatTableModule} from "@angular/material/table";
 import {MatCardModule} from "@angular/material/card";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
 
@@ -19,6 +20,7 @@ import {MatCardModule} from "@angular/material/card";
         AppComponent,
         HeaderComponent,
         FooterComponent,
+        HomeComponent,
 
     ],
 
