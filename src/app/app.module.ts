@@ -6,6 +6,12 @@ import { HeaderComponent } from './_layout/header/header.component';
 import { AppComponent }    from './app.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { SettingsModule }  from './settings/settings.module';
+import { FooterComponent } from './_layout/footer/footer.component';
+import {SharedModule} from "./_shared/shared.module";
+import {MatListModule} from "@angular/material/list";
+import {MatTableModule} from "@angular/material/table";
+import {MatCardModule} from "@angular/material/card";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
 
@@ -13,6 +19,8 @@ import { SettingsModule }  from './settings/settings.module';
 
         AppComponent,
         HeaderComponent,
+        FooterComponent,
+        HomeComponent,
 
     ],
 
@@ -21,8 +29,10 @@ import { SettingsModule }  from './settings/settings.module';
         BrowserModule,
         DashboardModule,
         SettingsModule,
-
-        RouterModule.forRoot([])
+        RouterModule.forRoot([]),
+        MatListModule,
+        MatTableModule,
+        MatCardModule
 
     ],
 

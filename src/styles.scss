@@ -1,34 +1,36 @@
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+
 body {
-    
+
     padding: 0;
     margin: 0;
-    
-    font-family: Lato, 'Roboto', sans-serif;
+
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     line-height: 22px;
-    
+
 }
 
 * {
-    
+
     outline: none;
-    
+
 }
 
 input, textarea {
-    
+
     caret-color: rgb(220, 0, 255) !important;
-    
+
 }
 
 .flex {
-    
+
     display: flex;
     align-items: center;
-    
+
 }
 
 .p-20 {
-    
+
     padding: 20px;
-    
+
 }
