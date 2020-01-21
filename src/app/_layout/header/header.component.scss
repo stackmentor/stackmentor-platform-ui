@@ -2,45 +2,59 @@
 
     .wrapper {
 
-        justify-content: space-between;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
 
-        .left {
+        .top {
 
-            .logo {
+            display: flex;
+            align-items: center;
+            width: inherit;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
 
-                img {
+            .left {
 
-                    max-width: 150px;
+                .logo {
 
-                }
+                    img {
 
-            }
-
-            .menu {
-
-                .item {
-
-
-                    margin: 20px;
-                    padding: 15px;
-
-                    cursor: pointer;
-
-                    font-size: 14px;
-                    letter-spacing: 2px;
-
-                    border-radius: 99px;
-
-
-                    &:hover {
-
-                        background: #F7F9FA;
+                        max-width: 150px;
 
                     }
 
                 }
 
-                .item.active {
+            }
+
+            .right {
+
+                .navLinks {
+
+                    display: flex;
+
+                    p {
+
+                        display: flex;
+                        margin: 20px;
+                        text-transform: uppercase;
+                        color: #367BF5;
+                        font-family: Roboto, "Helvetica Neue", sans-serif;
+                        font-size: small;
+                        font-weight: 700;
+                        width: auto;
+                        height: 100%;
+
+                        &:hover {
+
+                            background-color: #9BAAFA;
+                            border-radius: 99px;
+
+                        }
+
+                    }
 
                 }
 
@@ -48,63 +62,74 @@
 
         }
 
-        .right {
+        .bottom {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left {
+
+                .menu {
+
+                    display: flex;
+
+                    .item {
+
+                        margin: 20px;
+                        padding: 15px;
+
+                        cursor: pointer;
+
+                        font-family: Roboto, "Helvetica Neue", sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        letter-spacing: 0.44px;
+
+                        border-radius: 99px;
 
 
-            .nav-item {
+                        &:hover {
 
-                font-family: Roboto, "Helvetica Neue", sans-serif;
-                font-size: 15px;
-                color: #367BF5;
-                font-weight: bold;
+                            background: #F7F9FA;
 
-                line-height: 16px;
-                display: flex;
-                flex-direction: row;
+                        }
 
-                letter-spacing: 0.75px;
-                border-radius: 99px;
-                cursor: pointer;
+                    }
 
-                .nav-item.active {
+                    .item.active {
 
-                    background: #9BAAFA;
-
+                    }
                 }
-
-                &:hover {
-
-                    background: #9BAAFA;
-
-                }
-
-
             }
 
-            .menu-flex {
+            .right {
 
-                display: flex;
-                flex-direction: row;
+                .search {
 
-            }
+                    input {
 
-            .search {
+                        padding: 10px;
+                        font-size: 16px;
 
-                input {
+                        min-width: 400px;
 
-                    padding: 10px;
-                    font-size: 16px;
+                        border: 1px solid #E3E5E6;
 
-                    min-width: 400px;
+                        -webkit-border-radius: 99px;
+                        -moz-border-radius: 99px;
+                        border-radius: 99px;
+                        box-sizing: border-box;
 
-                    border: 1px solid #E3E5E6;
+                    }
 
-                    -webkit-border-radius: 99px;
-                    -moz-border-radius: 99px;
-                    border-radius: 99px;
-                    box-sizing: border-box;
+                    svg {
+
+                    }
+
 
                 }
+
 
             }
 
